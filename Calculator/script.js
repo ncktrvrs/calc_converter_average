@@ -3,7 +3,14 @@ function sum(a, b) {
   alert(`The result of summing is: ${result}`);
 }
 
-let a = +prompt("Enter the first number");
-let b = +prompt("Enter the second number");
+let firstNumber;
+do {
+  firstNumber = +prompt("Enter the first number");
+} while (Number.isNaN(firstNumber) == true);
 
-sum(a, b);
+let secondNumber;
+do {
+  secondNumber = +prompt("Enter the second number");
+} while (Number.isNaN(secondNumber) == true);
+
+sum(firstNumber, secondNumber);

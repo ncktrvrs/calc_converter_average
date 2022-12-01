@@ -1,6 +1,5 @@
 function sum(a, b) {
-  result = a + b;
-  alert(`The result of summing is: ${result}`);
+  return a + b;
 }
 
 let firstNumber;
@@ -13,4 +12,7 @@ do {
   secondNumber = +prompt("Enter the second number");
 } while (Number.isNaN(secondNumber) == true);
 
-sum(firstNumber, secondNumber);
+let result = sum(firstNumber, secondNumber);
+
+alert(`The result of summing is: ${result}`);
+

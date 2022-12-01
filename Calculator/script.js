@@ -24,8 +24,6 @@ do {
   secondNumber = +prompt("Enter the second number");
 } while (Number.isNaN(secondNumber) == true);
 
-let result = sum(firstNumber, secondNumber);
-
 alert(`${firstNumber} + ${secondNumber} = ` + sum(firstNumber, secondNumber) +
   `\n${firstNumber} - ${secondNumber} = ` + subtraction(firstNumber, secondNumber) +
   `\n${firstNumber} * ${secondNumber} = ` + multiplication(firstNumber, secondNumber) +

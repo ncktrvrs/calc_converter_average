@@ -2,6 +2,18 @@ function sum(a, b) {
   return a + b;
 }
 
+function subtraction (a, b) {
+  return a - b;
+}
+
+function multiplication (a, b) {
+  return a * b;
+}
+
+function division(a, b) {
+  return a / b;
+}
+
 let firstNumber;
 do {
   firstNumber = +prompt("Enter the first number");
@@ -14,5 +26,8 @@ do {
 
 let result = sum(firstNumber, secondNumber);
 
-alert(`The result of summing is: ${result}`);
+alert(`${firstNumber} + ${secondNumber} = ` + sum(firstNumber, secondNumber) +
+  `\n${firstNumber} - ${secondNumber} = ` + subtraction(firstNumber, secondNumber) +
+  `\n${firstNumber} * ${secondNumber} = ` + multiplication(firstNumber, secondNumber) +
+  `\n${firstNumber} / ${secondNumber} = ` + division(firstNumber, secondNumber));
 

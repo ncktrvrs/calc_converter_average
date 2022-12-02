@@ -18,7 +18,7 @@ do {
   thirdNumber = +prompt("Enter third number");
 } while (Number.isNaN(thirdNumber) == true);
 
-let result = average(firstNumber, secondNumber, thirdNumber)
+const result = average(firstNumber, secondNumber, thirdNumber);
 
 alert(`The average of ${firstNumber}, ${secondNumber}, ${thirdNumber} is ${result}`);
 
